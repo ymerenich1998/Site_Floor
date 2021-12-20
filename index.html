@@ -43,22 +43,59 @@
           <div class="collapse navbar-collapse " id="navbarNav">
             <ul class="navbar-nav ms-auto text-center text-lg-end">
               <li class="nav-item">
-                <span class="nav-link"><i class="fas fa-search"></i></span>
+                <span class="nav-link me-0 me-lg-4"><i class="fas fa-search"></i></span>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+                <a class="nav-link me-0 me-lg-2" href="#"><i class="fas fa-shopping-cart"></i></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Sign Up</a>
+                <button type="button" class="btn btn-plant" name="sign_up" data-bs-toggle="modal" data-bs-target="#Sign_up">Sign Up</button>
               </li>
               <li class="nav-item">
-                <button type="button" class="btn btn-plant" name="sign_in">Sign In</button>
+                <button type="button" class="btn btn-plant btn-plant-color" name="sign_in" data-bs-toggle="modal" data-bs-target="#Sign_in">Sign In</button>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     <!--  -->
+    </div>
+
+    <!-- Modal Sign_in -->
+    <div class="modal fade" id="Sign_in" tabindex="-1" aria-labelledby="sign_in" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button type="button" class="btn close-btn" data-bs-dismiss="modal"><i class="fas fa-times"></i></button>
+          <div class="container">
+            <div class="row modal-height align-items-center">
+              <div class="d-none d-md-block col-0 col-md-5 p-0">
+                <img src="img/modal.webp" class="w-100" alt="Floor">
+              </div>
+              <div class="col-12 col-md-7 text-center bg-pattern">
+                <div class="text-center form-block w-100">
+                  <h5 class="modal-title color-green" id="sign_in">Sign in</h5>
+                  <form class="" action="index.html" method="post">
+                    <div class="form-floating mb-4 mt-4">
+                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput">Email address</label>
+                    </div>
+                    <div class="form-floating mb-4">
+                      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                      <label for="floatingPassword">Password</label>
+                    </div>
+                    <input type="submit" name="" value="Sign In" class="btn btn-plant btn-plant-color w-100">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Sign_up -->
+    <div class="modal fade" id="Sign_up" tabindex="-1">
+
     </div>
 
     <!-- Bootstrap в связке с Popper -->
