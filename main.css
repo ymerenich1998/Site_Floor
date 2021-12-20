@@ -130,3 +130,21 @@
     padding-right: 25px;
   }
 }
+
+/* forms */
+.form-floating>.form-control{
+  padding: 0;
+  height: 45px;
+  padding-left: 12px;
+  padding-bottom: 5px;
+  padding-right: 12px;
+  border-radius: 0;
+}
+
+.form-floating>label{
+  padding: .65rem .75rem;
+}
+
+.form-floating>.form-control:focus~label, .form-floating>.form-control:not(:placeholder-shown)~label, .form-floating>.form-select~label{
+  transform: scale(.65) translateY(-0.5rem) translateX(0.25rem);
+}
